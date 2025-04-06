@@ -1,4 +1,4 @@
-path = "reflective game dev/digital prototype/"
+path = ""
 
 import csv
 with open(f"{path}cards.tsv") as file:
