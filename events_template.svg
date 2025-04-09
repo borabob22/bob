@@ -7,7 +7,7 @@
    width="700mm"
    height="700mm"
    viewBox="0 0 700 700"
-   sodipodi:docname="cards_template.svg"
+   sodipodi:docname="events_template.svg"
    inkscape:version="1.4.1 (1:1.4.1+202503302257+93de688d07)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -24,9 +24,9 @@
      inkscape:pageopacity="0.0"
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
-     inkscape:zoom="0.33992901"
-     inkscape:cx="2088.6714"
-     inkscape:cy="2198.9886"
+     inkscape:zoom="0.87043746"
+     inkscape:cx="286.06305"
+     inkscape:cy="363.61027"
      inkscape:window-width="1920"
      inkscape:window-height="1131"
      inkscape:window-x="0"
@@ -42,7 +42,7 @@
     <g
        id="g5">
       <rect
-         style="fill:#f9e232;stroke-width:1.51181;stroke-linejoin:round;paint-order:markers stroke fill"
+         style="fill:#32c4f9;stroke-width:1.51181;stroke-linejoin:round;paint-order:markers stroke fill;fill-opacity:1"
          id="rect1"
          width="70"
          height="100"
@@ -64,17 +64,6 @@
            y="17.609331"
            style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:8.46667px;line-height:0.8;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono Bold';text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1"
            id="tspan2">&lt;title1        &gt;</tspan></text>
-      <text
-         xml:space="preserve"
-         style="font-weight:bold;font-size:5.64444px;line-height:1;font-family:'Minion Pro';-inkscape-font-specification:'Minion Pro Bold';font-variant-numeric:tabular-nums;text-align:center;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke-width:1.51181;stroke-linejoin:round;paint-order:markers stroke fill"
-         x="34.971779"
-         y="96.46405"
-         id="text3"><tspan
-           sodipodi:role="line"
-           id="tspan3"
-           x="34.971779"
-           y="96.46405"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;line-height:1;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono';text-align:center;text-anchor:middle">— &lt;lv&gt; —</tspan></text>
       <text
          xml:space="preserve"
          style="font-weight:bold;font-size:5.64444px;line-height:1;font-family:'Minion Pro';-inkscape-font-specification:'Minion Pro Bold';font-variant-numeric:tabular-nums;text-align:center;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke-width:1.51181;stroke-linejoin:round;paint-order:markers stroke fill"
@@ -135,9 +124,14 @@
            x="34.971779"
            y="87.68045"
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;line-height:1;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono';text-align:center;text-anchor:middle"
-           id="tspan16">&lt;description10        &gt;</tspan></text>
+           id="tspan16">&lt;description10        &gt;</tspan><tspan
+           sodipodi:role="line"
+           x="34.971779"
+           y="93.914177"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;line-height:1;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono';text-align:center;text-anchor:middle"
+           id="tspan4">&lt;description11        &gt;</tspan></text>
       <rect
-         style="fill:#f9e232;stroke-width:1.51181;stroke-linejoin:round;paint-order:markers stroke fill"
+         style="fill:#32c4f9;stroke-width:1.51181;stroke-linejoin:round;paint-order:markers stroke fill;fill-opacity:1"
          id="rect16"
          width="70"
          height="100"
@@ -154,17 +148,6 @@
            x="664.9718"
            y="667.67841"
            style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:50.8px;line-height:1;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono Bold';text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1">?</tspan></text>
-      <text
-         xml:space="preserve"
-         style="font-weight:bold;font-size:5.64444px;line-height:1;font-family:'Minion Pro';-inkscape-font-specification:'Minion Pro Bold';font-variant-numeric:tabular-nums;text-align:center;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke-width:1.51181;stroke-linejoin:round;paint-order:markers stroke fill"
-         x="664.9718"
-         y="696.46405"
-         id="text18"><tspan
-           sodipodi:role="line"
-           id="tspan18"
-           x="664.9718"
-           y="696.46405"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;line-height:1;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono';text-align:center;text-anchor:middle">— ? —</tspan></text>
     </g>
   </g>
 </svg>
