@@ -2,12 +2,12 @@ path = ""
 
 import csv
 from cairosvg import svg2png
-for deck in ("cards", "events"):
-	with open(f"{path}{deck}.tsv") as file:
+for deck in ("action", "event", "needs", "punishment", "secret"):
+	with open(f"{path}{deck}/{deck}.tsv") as file:
 		data = list(csv.reader(file, delimiter="\t"))
 		cards = [{data[0][i]: line[i] for i in range(len(data[0]))} for line in data[1:]]
 
-	with open(f"{path}{deck}_template.svg") as file:
+	with open(f"{path}{deck}/{deck}_template.svg") as file:
 		data = file.read()
 
 	group_regex = "<g(?:[\n]|.)*</g>"
@@ -53,6 +53,4 @@ for deck in ("cards", "events"):
 		card_groups += result
 
 	result = re.sub(group_regex, card_groups, data)
-	# with open(f"{path}{deck}_exported.svg", "w+") as file:
-	# 	print(result, file=file)
-	svg2png(bytestring=result, write_to=f"{path}{deck}.png")
+	svg2png(bytestring=result, write_to=f"{path}{deck}/{deck}.png")
