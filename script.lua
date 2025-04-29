@@ -12,60 +12,79 @@ end
 
 function onObjectLeaveContainer(container, object)
     --[[ Assign tags to cards leaving action deck --]]
-    if container.getName() == 'ActionDeck' then
-        object.addTag('DiscardPile')
-        object.addTag('PassiveCards')
+    if container.getName() == 'Action Deck' then
+        object.addTag('Action')
+
+    end
+
+    --[[ Assign tags to cards leaving events deck --]]
+    if container.getName() == 'Events Deck' then
+        object.addTag('Events')
+
+    end
+
+    --[[ Assign tags to cards leaving needs deck --]]
+    if container.getName() == 'Needs Deck' then
+        object.addTag('Needs')
+
+    end
+
+    --[[ Assign tags to cards leaving secret deck --]]
+    if container.getName() == 'Secret Deck' then
+        object.addTag('Secret')
+
+    end
+
+    --[[ Assign tags to resources leaving bags--]]
+    if container.getName() == 'Food Bag' then
+        object.addTag('Resource')
+
+    end
+
+    if container.getName() == 'Water Bag' then
+        object.addTag('Resource')
+
+    end
+
+    if container.getName() == 'Shelter Bag' then
+        object.addTag('Resource')
+
+    end
+
+    if container.getName() == 'Leisure Bag' then
+        object.addTag('Resource')
+
     end
 end
 
-function onObjectEnterZone(zone, object)
-    --[[ Red Player Hand --]]
-    if zone.getName() == 'RedPlayerHand' then
-        object.addTag('RedPlayerCard1')
-        object.addTag('RedPlayerCard2')
-    end
+--[[ Hide resources entering stash area --]]
+function onObjectEnterZone(zone, obj)
+    if obj.hasTag('Resource') then
+        --[[ White  --]]
+        if zone.getName() == 'White Stash' then
+            obj.setInvisibleTo({"Orange", "Green", "Purple"})
+        end
 
-    --[[ White Player Hand --]]
-    if zone.getName() == 'WhitePlayerHand' then
-        object.addTag('WhitePlayerCard1')
-        object.addTag('WhitePlayerCard2')
-    end
+        --[[ Orange --]]
+        if zone.getName() == 'Orange Stash' then
+            obj.setInvisibleTo({"White", "Green", "Purple"})
+        end
 
-    --[[ Purple Player Hand --]]
-    if zone.getName() == 'PurplePlayerHand' then
-        object.addTag('PurplePlayerCard1')
-        object.addTag('PurplePlayerCard2')
-    end
+        --[[ Green  --]]
+        if zone.getName() == 'Green Stash' then
+            obj.setInvisibleTo({"Orange", "White", "Purple"})
+        end
 
-    --[[ Pink Player Hand --]]
-    if zone.getName() == 'PinkPlayerHand' then
-        object.addTag('PinkPlayerCard1')
-        object.addTag('PinkPlayerCard2')
+        --[[ Purple --]]
+        if zone.getName() == 'Purple Stash' then
+            obj.setInvisibleTo({"Orange", "Green", "White"})
+        end
     end
 end
 
-function onObjectDrop(playerColor, object)
-    --[[ Red Player Drop Card --]]
-    if playerColor == 'Red' and object.type == 'Card' then
-        object.removeTag('RedPlayerCard1')
-        object.removeTag('RedPlayerCard2')
-    end
-
-    --[[ White Player Drop Card --]]
-    if playerColor == 'White' and object.type == 'Card' then
-        object.removeTag('WhitePlayerCard1')
-        object.removeTag('WhitePlayerCard2')
-    end
-
-    --[[ Purple Player Drop Card --]]
-    if playerColor == 'Purple' and object.type == 'Card' then
-        object.removeTag('PurplePlayerCard1')
-        object.removeTag('PurplePlayerCard2')
-    end
-
-    --[[ Pink Player Drop Card --]]
-    if playerColor == 'Pink' and object.type == 'Card' then
-        object.removeTag('PinkPlayerCard1')
-        object.removeTag('PinkPlayerCard2')
+--[[ Reveal resources leaving stash area --]]
+function onObjectLeaveZone(zone, obj)
+    if obj.hasTag('Resource') then
+        obj.setInvisibleTo({})
     end
 end
