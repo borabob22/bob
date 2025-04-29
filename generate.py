@@ -1,6 +1,10 @@
 path = ""
 
 import csv
+import os
+
+os.environ['path'] += r';C:\Program Files\Inkscape\bin'
+
 from cairosvg import svg2png
 for deck in ("action", "event", "needs", "punishment", "secret"):
 	with open(f"{path}{deck}/{deck}.tsv") as file:
