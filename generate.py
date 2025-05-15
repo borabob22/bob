@@ -57,4 +57,4 @@ for deck in ("action", "event", "needs", "punishment", "secret"):
 		card_groups += result
 
 	result = re.sub(group_regex, card_groups, data)
-	svg2png(bytestring=result, write_to=f"{path}{deck}/{deck}.png")
+	svg2png(bytestring=result.encode("utf-8"), write_to=f"{path}{deck}/{deck}.png")
