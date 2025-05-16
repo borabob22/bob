@@ -9,6 +9,7 @@ from cairosvg import svg2png
 for deck in ("action", "event", "needs", "punishment", "secret"):
 	with open(f"{path}{deck}/{deck}.tsv") as file:
 		data = list(csv.reader(file, delimiter="\t"))
+		print(deck)
 		cards = [{data[0][i]: line[i] for i in range(len(data[0]))} for line in data[1:]]
 
 	with open(f"{path}{deck}/{deck}_template.svg") as file:
