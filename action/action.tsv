@@ -1,10 +1,10 @@
 title	description	lv
 Cannibalism	+5 Food, One player of the leader's choice loses 1 HP Token	12
 Cannibalism	+6 Food, One player of the leader's choice loses 1 HP Token	9
-High Effort	You do 2 random actions, drawing them from the top of the actions deck	7
-High Effort	You do 2 random actions, drawing them from the top of the actions deck	11
-Mimic	This counts as two copies of a card from one of the other players (leader's choice); Permanent -4 to Leadership Value (keep a copy of this card visible in your play area)	5
-Mimic	This counts as two copies of a card from one of the other players (leader's choice); Permanent -4 to Leadership Value (keep a copy of this card visible in your play area)	9
+High Effort	You do 2 random actions, drawing them from the top of the actions deck. Discard 1 food/water (leader's choice).	7
+High Effort	You do 2 random actions, drawing them from the top of the actions deck. Discard 1 food/water (leader's choice).	11
+Mimic	This counts as a copy of a card from one of the other players (leader's choice)	5
+Mimic	This counts as a copy of a card from one of the other players (leader's choice)	9
 Scavenging Expedition	All of you search the crash site. Cancel other actions of this turn, gain 5 tokens of the leader's choice	4
 Scavenging Expedition	All of you search the crash site. Cancel other actions of this turn, gain 5 tokens of the leader's choice	8
 Gather Fruit	+2 Food	2
@@ -41,5 +41,5 @@ Relax	+1 Leisure	8
 Relax	+1 Leisure	10
 Relax	+1 Leisure	6
 Relax	+1 Leisure	12
-Night Watch	You were secretly tasked to guard the stockpiles the previous night. Players (except yourself) must reveal their last played hidden action	12
-Night Watch	You were secretly tasked to guard the stockpiles the previous night. Players (except yourself) must reveal their last played hidden action	6
+Night Watch	You were secretly tasked with guarding the stockpiles. Players (except yourself) must reveal their last played hidden action	12
+Night Watch	You were secretly tasked with guarding the stockpiles. Players (except yourself) must reveal their last played hidden action	6
